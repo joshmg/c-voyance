@@ -78,9 +78,13 @@ function drawRectangle(zoneName, trafficCount) {
     bounds.east = zoneLocation.northeast.lng;
     bounds.west = zoneLocation.southwest.lng;
 
-    console.log("Drawing Zone: "+ zoneName);
-    console.log(bounds);
-    console.log("");
+    var boxSize = 0.00025;
+
+    bounds.north = (bounds.north + bounds.south) / 2.0 - boxSize;
+    bounds.south = bounds.north + boxSize * 2.0;
+
+    bounds.east = (bounds.east + bounds.west) / 2.0 - boxSize;
+    bounds.west = bounds.east - boxSize * 2.0;
 
     // moveToLocation(bounds.north, bounds.east);
 
