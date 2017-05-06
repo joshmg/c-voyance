@@ -36,14 +36,14 @@ $(function() {
     $("#control-submit").on("click", function() {
         var date = $("#datepicker").val().replace(" ", "T") + "-0500";
 
+        // "http://smrtsandbox.com:8080/rest/easton-parking-data/getTrafficCounts"
+
         postJson(
-            "http://smrtsandbox.com:8080/rest/easton-parking-data/getTrafficCounts",
+            "//smart-columbus.softwareverde.com/rest/easton-parking-data/getTrafficCounts/",
             {
-                "apiKey": "cd914c64-08e2-4245-84a9-8d767a299425",
+                "apiKey":       "0f9d2a84-c2ee-411d-ab27-ec136a830c57",
                 "sensor_group": "",
-                "sensor_zone": "31 Fenlon St S",
-                "start_time": "2017-01-01T00:00:00-0500",
-                "end_time": "2017-01-31T23:00:00-0500"
+                "sensor_zone":  "31 Fenlon St S"
             },
             function(data) {
                 console.log(data);
