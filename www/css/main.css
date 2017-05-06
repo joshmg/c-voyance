@@ -1,9 +1,25 @@
-#map {
-    height: 90%;
-    margin-bottom: 100px;
-}
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+#map {
+    height: 90%;
+}
+
+#control {
+    height: 100px;
+    padding-top: 5px;
+    background-color: #333333;
+    color: #DDDDDD;
+
+    font-size: 150%;
+}
+
+#control input {
+    border-radius: 5px;
+    border: solid 2px #777777;
+
+    font-size: 125%;
 }

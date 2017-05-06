@@ -5,11 +5,25 @@
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <!-- JQueryUI Datepicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//jqueryui.com/resources/demos/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui-timepicker-addon.css" />
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/jquery-ui-timepicker-addon.js"></script>
+
+    <script src="//momentjs.com/downloads/moment.js"></script>
+
     <script src="js/main.js"></script>
   </head>
   <body>
     <div id="map"></div>
-    <div id="control"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1j_hmtcjaSnNp3esWD3oxtySKsR3m6Pc&callback=initMap" async defer></script>
+    <div id="control">
+      <label for="datepicker">Select Date:</label>
+      <input type="text" id="datepicker" />
+    </div>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyA1j_hmtcjaSnNp3esWD3oxtySKsR3m6Pc&callback=initMap" async defer></script>
   </body>
 </html>

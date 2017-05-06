@@ -9,3 +9,13 @@ function initMap() {
     );
 }
 
+$(function() {
+    $("#datepicker").datetimepicker({
+        dateFormat: "yy-mm-dd",
+        timeFormat: "hh:mm tt",
+        stepHour: 1,
+        stepMinute: 5,
+        stepSecond: 60
+    });
+});
+
