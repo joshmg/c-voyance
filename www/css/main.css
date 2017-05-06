@@ -23,3 +23,9 @@ html, body {
 
     font-size: 125%;
 }
+
+#control #control-submit {
+    background-color: #EEEEEE;
+    color: #333333;
+    font-weight: bold;
+}
