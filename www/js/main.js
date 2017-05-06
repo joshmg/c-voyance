@@ -172,7 +172,7 @@ $(function() {
         var date = rawDateTime.substring(0, 10);
         var time = rawDateTime.substring(11, 19);
 
-        var useTimezone = true;
+        var useTimezone = false;
 
         var startTime = date + "T" + addMinutes(time, -20) + (useTimezone ? "-0500" : "-0000");
         var endTime = date + "T" + addMinutes(time, 40) + (useTimezone ? "-0500" : "-0000");

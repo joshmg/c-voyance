@@ -25,7 +25,7 @@ rp(dataOptions)
     .then(function (parsedBody) {
         var zones = parsedBody.sensorZones;
         _.forOwn(zones, function(value, key) {
-            mapOptions.qs.address = value;
+            mapOptions.qs.address = value + ',+Columbus,+OH';
             rp(mapOptions)
                 .then(function (parsedBody) {
                     var mappedZone = new Object();
